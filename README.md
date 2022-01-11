@@ -1,31 +1,25 @@
-# curriculum-databases-projects-template
+# VET CLINIC DATABASE
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+> Vet Clinic is the first project of the Ruby / Databases and Interviewing at Microverse. Vet Clinic is a Relational database with a table that is created to store information about animals.
 
 
 ## Getting Started
 
 This repository includes files with plain SQL that can be used to recreate a database:
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+- Used [schema.sql](./schema.sql) to create all tables.
+- Used [data.sql](./data.sql) to populate tables with sample data.
+- Checked [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 
-## Authors
+## Author
 
-👤 **Author1**
+👤 **Hamid Murambiwa**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@hamid-murambiwa](https://github.com/hamid-murambiwa)
+- Twitter: [@twitterhandle](https://twitter.com/Hamid87789454)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/hamid-murambiwa/)
+- AngelList: [AngelList Profile](https://angel.co/u/hamid-murambiwa)
 
 ## 🤝 Contributing
 
@@ -39,7 +33,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
+- Hat tip to anyone who's code was used
 - Inspiration
 - etc
 
