@@ -1,5 +1,6 @@
 /* Populate database with sample data. */
 
+----Insert the following data into the animals table:
 INSERT INTO animals (
     name,
     date_of_birth,
@@ -149,3 +150,104 @@ INSERT INTO animals (
         true,
         17
         );
+
+
+--Insert the following data into the owners table:
+INSERT INTO owners (
+    full_name,
+    age
+    ) 
+    VALUES (
+        'Sam Smith',
+        34
+        );
+
+INSERT INTO owners (
+    full_name,
+    age
+    ) 
+    VALUES (
+        'Jennifer Orwell',
+        19
+        );
+
+INSERT INTO owners (
+    full_name,
+    age
+    ) 
+    VALUES (
+        'Bob',
+        45
+        );
+
+INSERT INTO owners (
+    full_name,
+    age
+    ) 
+    VALUES (
+        'Melody Pond',
+        77
+        );
+
+INSERT INTO owners (
+    full_name,
+    age
+    ) 
+    VALUES (
+        'Dean Winchester',
+        14
+        );
+
+INSERT INTO owners (
+    full_name,
+    age
+    ) 
+    VALUES (
+        'Jodie Whittaker',
+        38
+        );
+
+
+--Insert the following data into the species table:
+INSERT INTO species (
+    name
+    ) 
+    VALUES (
+        'Pokemon'
+        );
+
+INSERT INTO species (
+    name
+    ) 
+    VALUES (
+        'Digimon'
+        );
+
+
+--Modify your inserted animals so it includes the species_id value:
+ALTER TABLE animals
+DROP FOREIGN KEY;
+
+UPDATE animals SET species_id = 1;
+UPDATE animals SET species_id = 2 WHERE name LIKE '%mon';
+
+ALTER TABLE animals
+ADD CONSTRAINT fk_species
+FOREIGN KEY(species_id) 
+REFERENCES species(id);
+
+--Modify your inserted animals to include owner information (owner_id):
+UPDATE animals SET owners_id = 1 WHERE name = 'Agumon';
+
+UPDATE animals SET owners_id = 2 WHERE name='Gabumon';
+UPDATE animals SET owners_id = 2 WHERE name='Pikachu';
+
+UPDATE animals SET owners_id = 3 WHERE name='Devimon';
+UPDATE animals SET owners_id = 3 WHERE name='Plantmon';
+
+UPDATE animals SET owners_id = 4 WHERE name='Charmander';
+UPDATE animals SET owners_id = 4 WHERE name='Squirtle';
+UPDATE animals SET owners_id = 4 WHERE name='Blossom';
+
+UPDATE animals SET owners_id = 5 WHERE name='Angemon';       
+UPDATE animals SET owners_id = 5 WHERE name='Boarmon';
