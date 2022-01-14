@@ -1,4 +1,3 @@
-/*Queries that provide answers to the questions from all projects.*/
 
 SELECT * from animals WHERE name = 'Luna';
 
@@ -80,7 +79,6 @@ SELECT species, MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY species;
 SELECT species, AVG(escape_attempts) FROM animals WHERE date_of_birth BETWEEN '1990-1-1' AND '2000-1-1' GROUP BY species;
 
 
---Write queries (using JOIN)
 SELECT animals.name FROM animals 
 JOIN owners on animals.owners_id = owners.id WHERE owners.full_name = 'Melody Pond';
 
