@@ -50,7 +50,7 @@ CREATE TABLE invoice_items (
 
 
 CREATE INDEX invoice_items_invoice_id ON invoice_items(invoice_id);
-CREATE INDEX invoice_items_invoice_id ON invoice_items(treatment_id);
+CREATE INDEX invoice_items_treatment_id ON invoice_items(treatment_id);
 
 CREATE TABLE medical_histories_treatments(
   id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
